@@ -1,0 +1,40 @@
+[
+    {
+      "predicate": "Any",
+      "conditions": [
+        {
+          "field": "From",
+          "predicate": "Contains",
+          "value": "hello@updates.rapido.bike"
+        },
+        {
+          "field": "Subject",
+          "predicate": "Equals",
+          "value": "Design Patterns"
+        }
+      ],
+      "actions": [
+        "Mark as read",
+        "Move Message: IMPORTANT"
+      ]
+    },
+    {
+      "predicate": "Any",
+      "conditions": [
+        {
+          "field": "From",
+          "predicate": "Contains",
+          "value": "News@insideapple.apple.com"
+        },
+        {
+          "field": "Received",
+          "predicate": "Less than days",
+          "value": "1"
+        }
+      ],
+      "actions": [
+        "Mark as unread",
+        "Move Message: IMPORTANT"
+      ]
+    }
+  ]
